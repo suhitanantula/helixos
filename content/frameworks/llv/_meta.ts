@@ -1,3 +1,6 @@
 export default {
-  index: 'Overview'
+  index: 'Overview',
+  lines: 'Lines',
+  loops: 'Loops',
+  vibes: 'Vibes'
 }
