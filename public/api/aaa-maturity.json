@@ -1,0 +1,106 @@
+{
+  "framework": "AAA Maturity Model",
+  "version": "1.0",
+  "lastUpdated": "2026-02-22",
+  "tiers": [
+    {
+      "id": "assist",
+      "name": "Assist",
+      "level": 1,
+      "definition": "AI as a tool. Humans initiate, AI responds.",
+      "characteristics": {
+        "initiative": "Human initiates all interactions",
+        "decisionAuthority": "Human retains 100%",
+        "aiRole": "Reactive tool",
+        "trustRequired": "Low",
+        "organizationalChange": "Minimal"
+      },
+      "applications": ["Productivity tools", "FAQ chatbots", "Basic automation", "Document drafting"],
+      "unlocks9Q": ["Q1", "Q2", "Q3"]
+    },
+    {
+      "id": "augment",
+      "name": "Augment",
+      "level": 2,
+      "definition": "AI as a collaborator. AI suggests, humans decide.",
+      "characteristics": {
+        "initiative": "AI proactively suggests",
+        "decisionAuthority": "Human retains authority",
+        "aiRole": "Collaborative partner",
+        "trustRequired": "Moderate",
+        "organizationalChange": "Significant"
+      },
+      "applications": ["Recommendation engines", "Co-pilots", "Decision support", "Workflow optimization"],
+      "unlocks9Q": ["Q4", "Q5", "Q6"]
+    },
+    {
+      "id": "adapt",
+      "name": "Adapt",
+      "level": 3,
+      "definition": "AI as an agent. AI acts on behalf, humans oversee.",
+      "characteristics": {
+        "initiative": "AI acts autonomously",
+        "decisionAuthority": "Delegated to AI within boundaries",
+        "aiRole": "Autonomous agent",
+        "trustRequired": "High",
+        "organizationalChange": "Transformational"
+      },
+      "applications": ["Autonomous operations", "Intelligent agents", "Self-directing systems", "Orchestration"],
+      "unlocks9Q": ["Q7", "Q8", "Q9"]
+    }
+  ],
+  "gates": {
+    "assistToAugment": {
+      "name": "Assist → Augment Gate",
+      "coreQuestion": "Can the AI learn and proactively contribute?",
+      "technicalGates": [
+        "Production-ready ML pipeline",
+        "Closed feedback loops",
+        "Workflow-embedded integration",
+        "Above 90% accuracy baseline"
+      ],
+      "organizationalGates": [
+        "Above 70% user adoption",
+        "Basic AI literacy",
+        "Redesigned workflows",
+        "Governance framework"
+      ],
+      "trustGates": [
+        "Executive sponsor",
+        "Positive user sentiment",
+        "Customer acceptance"
+      ]
+    },
+    "augmentToAdapt": {
+      "name": "Augment → Adapt Gate",
+      "coreQuestion": "Can we delegate decision-making authority to the AI?",
+      "technicalGates": [
+        "Above 95% recommendation acceptance",
+        "Defined edge case coverage",
+        "On-demand explainability",
+        "Automatic failsafes",
+        "Complete audit capability"
+      ],
+      "organizationalGates": [
+        "Delegation framework",
+        "Under 10% override rate",
+        "Tested incident playbooks",
+        "Oversight capability"
+      ],
+      "trustGates": [
+        "Board-level endorsement",
+        "Regulatory compliance",
+        "Active customer consent",
+        "Social license"
+      ]
+    }
+  },
+  "capabilityDimensions": [
+    {"id": "technology", "name": "Technology", "description": "Infrastructure and systems capability"},
+    {"id": "data", "name": "Data", "description": "Information assets and architecture"},
+    {"id": "people", "name": "People", "description": "Skills and organizational design"},
+    {"id": "process", "name": "Process", "description": "Ways of working"},
+    {"id": "governance", "name": "Governance", "description": "Control and accountability"},
+    {"id": "culture", "name": "Culture", "description": "Mindset and ways of being"}
+  ]
+}

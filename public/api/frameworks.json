@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-02-22",
+  "frameworks": [
+    {
+      "id": "9q",
+      "name": "9Q Framework",
+      "trademarked": true,
+      "question": "Where should our AI portfolio be positioned?",
+      "description": "A 3×3 strategic positioning grid for AI portfolios, mapping customer autonomy against execution autonomy.",
+      "url": "/frameworks/9q",
+      "tags": ["strategy", "positioning", "AI-portfolio", "business-model"],
+      "related": ["aaa", "llv"]
+    },
+    {
+      "id": "aaa",
+      "name": "AAA Maturity Model",
+      "trademarked": true,
+      "question": "Are we ready? How do we progress?",
+      "description": "Three-tier capability maturity model describing how organizations progress through Assist, Augment, and Adapt stages.",
+      "url": "/frameworks/aaa",
+      "tags": ["maturity", "capability", "readiness", "progression"],
+      "related": ["9q", "4a"]
+    },
+    {
+      "id": "llv",
+      "name": "Lines, Loops & Vibes",
+      "trademarked": true,
+      "question": "What's the rhythm of our organization?",
+      "description": "Diagnostic framework categorizing organizational work into repeatable structures (Lines), learning cycles (Loops), and intuition-driven work (Vibes).",
+      "url": "/frameworks/llv",
+      "tags": ["work-types", "organizational-rhythm", "automation-potential"],
+      "related": ["4a", "aaa"]
+    },
+    {
+      "id": "4a",
+      "name": "The 4A Process",
+      "trademarked": true,
+      "question": "How does work change with AI?",
+      "description": "Four approaches to work transformation: Abandon, Assist, Augment, Adapt. Starts with elimination before transformation.",
+      "url": "/frameworks/4a",
+      "tags": ["work-transformation", "automation", "process-change"],
+      "related": ["aaa", "llv"]
+    }
+  ],
+  "unifiedLogic": {
+    "core": "AAA (Assist → Augment → Adapt)",
+    "description": "All frameworks share a common foundation. AAA applies internally as capability maturity and externally as the 9Q strategic positioning grid.",
+    "connections": [
+      {
+        "from": "aaa",
+        "to": "9q",
+        "relationship": "AAA is the vertical axis of 9Q. Internal capability determines viable external positions."
+      },
+      {
+        "from": "llv",
+        "to": "4a",
+        "relationship": "Work type (Lines/Loops/Vibes) determines appropriate 4A approach."
+      },
+      {
+        "from": "4a",
+        "to": "aaa",
+        "relationship": "AAA tier unlocks different 4A options. Adapt-level required for Adapt transformation."
+      }
+    ]
+  }
+}

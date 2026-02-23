@@ -1,0 +1,50 @@
+{
+  "framework": "9Q",
+  "version": "1.0",
+  "lastUpdated": "2026-02-22",
+  "axes": {
+    "vertical": {
+      "name": "Customer Autonomy",
+      "description": "How much decision-making authority does the AI have in relation to the customer?",
+      "levels": [
+        {"id": "V1", "name": "Assist", "definition": "AI helps, customer decides and acts"},
+        {"id": "V2", "name": "Augment", "definition": "AI suggests, customer retains authority"},
+        {"id": "V3", "name": "Adapt", "definition": "AI acts on customer's behalf within boundaries"}
+      ]
+    },
+    "horizontal": {
+      "name": "Execution Autonomy",
+      "description": "How does the AI's execution capability evolve?",
+      "levels": [
+        {"id": "H1", "name": "Static", "definition": "Fixed rules, no learning"},
+        {"id": "H2", "name": "Adaptive", "definition": "Learns and improves over time"},
+        {"id": "H3", "name": "Autonomous", "definition": "Self-directs within domain"}
+      ]
+    }
+  },
+  "quadrants": [
+    {"id": "Q1", "name": "Basic", "shortName": "Basic Assistant", "v": "V1", "h": "H1", "definition": "User-initiated, static responses", "examples": ["FAQ bots", "basic search", "rule-based chatbots"]},
+    {"id": "Q2", "name": "Smart", "shortName": "Smart Assistant", "v": "V1", "h": "H2", "definition": "User-initiated, learning system", "examples": ["Smart search", "learning chatbots", "recommendation previews"]},
+    {"id": "Q3", "name": "Intelligent", "shortName": "Intelligent Assistant", "v": "V1", "h": "H3", "definition": "User-initiated, self-directing execution", "examples": ["Research agents", "code assistants", "analysis tools"]},
+    {"id": "Q4", "name": "Co-Create", "shortName": "Co-Creator", "v": "V2", "h": "H1", "definition": "AI suggests, human decides, fixed rules", "examples": ["Template generators", "basic design tools", "fixed recommendations"]},
+    {"id": "Q5", "name": "Curator", "shortName": "Curator", "v": "V2", "h": "H2", "definition": "AI suggests, learns, human retains authority", "examples": ["Content curation", "smart feeds", "adaptive recommendations"]},
+    {"id": "Q6", "name": "Partner", "shortName": "Partner", "v": "V2", "h": "H3", "definition": "AI suggests, self-directs within domain", "examples": ["Autonomous trading within limits", "dynamic pricing", "adaptive workflows"]},
+    {"id": "Q7", "name": "Proxy", "shortName": "Proxy", "v": "V3", "h": "H1", "definition": "AI acts on behalf, fixed rules", "examples": ["Auto-bill-pay", "scheduled transactions", "rule-based automation"]},
+    {"id": "Q8", "name": "Intelligent Proxy", "shortName": "Int. Proxy", "v": "V3", "h": "H2", "definition": "AI acts on behalf, learns and improves", "examples": ["Intelligent portfolio management", "adaptive scheduling", "learning automation"]},
+    {"id": "Q9", "name": "Orchestrator", "shortName": "Orchestrator", "v": "V3", "h": "H3", "definition": "AI acts, self-directs, optimizes autonomously", "examples": ["Autonomous mining operations", "self-driving logistics", "fully automated trading"]}
+  ],
+  "validation": {
+    "methodology": "Cross-sector analysis of 11 major Australian enterprises across 7 industries",
+    "findings": {
+      "sweetSpot": "Q5",
+      "emptyQuadrants": ["Q1", "Q2", "Q7"],
+      "distribution": [
+        {"quadrant": "Q3", "companies": ["Services Australia"]},
+        {"quadrant": "Q4", "companies": ["ANZ", "Optus", "Bunnings"]},
+        {"quadrant": "Q5", "companies": ["CBA", "NAB", "Westpac", "Woolworths", "Telstra"]},
+        {"quadrant": "Q8", "companies": ["Rio Tinto", "Fortescue"]}
+      ],
+      "notes": "Q5 is current sweet spot. No one in Q1-Q2 (table stakes). Q7 empty (customer trust prevents static proxies)."
+    }
+  }
+}

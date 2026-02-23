@@ -1,0 +1,132 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-02-22",
+  "terms": [
+    {
+      "term": "9Q Framework",
+      "definition": "A 3×3 strategic positioning grid for AI portfolios, mapping customer autonomy (Assist/Augment/Adapt) against execution autonomy (Static/Adaptive/Autonomous).",
+      "category": "framework",
+      "related": ["Quadrant", "Customer Autonomy", "Execution Autonomy"]
+    },
+    {
+      "term": "AAA Maturity Model",
+      "definition": "Three-tier capability maturity model: Assist (AI as tool), Augment (AI as collaborator), Adapt (AI as agent).",
+      "category": "framework",
+      "related": ["Assist", "Augment", "Adapt", "Maturity Gate"]
+    },
+    {
+      "term": "Adapt",
+      "definition": "The third tier of AAA maturity where AI acts autonomously within defined boundaries, with humans providing oversight rather than direct control.",
+      "category": "tier",
+      "related": ["AAA Maturity Model", "Autonomous Agent", "Delegation"]
+    },
+    {
+      "term": "Assist",
+      "definition": "The first tier of AAA maturity where AI serves as a reactive tool, responding to human-initiated requests.",
+      "category": "tier",
+      "related": ["AAA Maturity Model", "Tool", "Reactive"]
+    },
+    {
+      "term": "Augment",
+      "definition": "The second tier of AAA maturity where AI proactively suggests and collaborates, while humans retain decision authority.",
+      "category": "tier",
+      "related": ["AAA Maturity Model", "Collaboration", "Recommendation"]
+    },
+    {
+      "term": "Capability-Position Alignment",
+      "definition": "The principle that internal capability (AAA tier) must match external position (9Q quadrant). Misalignment is the primary cause of AI initiative failure.",
+      "category": "principle",
+      "related": ["9Q Framework", "AAA Maturity Model"]
+    },
+    {
+      "term": "CoIntelligence Index",
+      "definition": "A weighted average score representing an organization's overall position on the human-AI collaboration spectrum, calculated from 9Q positions across the portfolio.",
+      "category": "metric",
+      "related": ["9Q Framework", "Portfolio Shape"]
+    },
+    {
+      "term": "Customer Autonomy",
+      "definition": "The vertical axis of the 9Q grid, describing how much decision-making authority the AI has in relation to the customer (Assist → Augment → Adapt).",
+      "category": "axis",
+      "related": ["9Q Framework", "Execution Autonomy"]
+    },
+    {
+      "term": "Execution Autonomy",
+      "definition": "The horizontal axis of the 9Q grid, describing how the AI's execution capability evolves (Static → Adaptive → Autonomous).",
+      "category": "axis",
+      "related": ["9Q Framework", "Customer Autonomy"]
+    },
+    {
+      "term": "Lines",
+      "definition": "In the LLV framework, repeatable and predictable work with clear inputs, outputs, and consistent processes. High automation potential.",
+      "category": "work-type",
+      "related": ["LLV", "Loops", "Vibes", "Automation"]
+    },
+    {
+      "term": "Loops",
+      "definition": "In the LLV framework, learning cycles that improve through iteration, feedback, and refinement. Augmentation sweet spot.",
+      "category": "work-type",
+      "related": ["LLV", "Lines", "Vibes", "Learning"]
+    },
+    {
+      "term": "LLV",
+      "definition": "Lines, Loops & Vibes - a diagnostic framework categorizing organizational work into three types based on predictability, learning, and intuition.",
+      "category": "framework",
+      "related": ["Lines", "Loops", "Vibes", "Rhythm Signature"]
+    },
+    {
+      "term": "Maturity Gate",
+      "definition": "Specific conditions that must be met before transitioning between AAA tiers. Includes technical, organizational, and trust gates.",
+      "category": "concept",
+      "related": ["AAA Maturity Model", "Assist", "Augment", "Adapt"]
+    },
+    {
+      "term": "Override",
+      "definition": "The human ability to intervene and override AI decisions at any moment. Essential even at Adapt tier - enables trust rather than diminishes autonomy.",
+      "category": "principle",
+      "related": ["Adapt", "Trust", "Governance"]
+    },
+    {
+      "term": "Portfolio Shape",
+      "definition": "The pattern created when multiple AI initiatives are plotted on the 9Q grid. Reveals concentration, spread, direction, and gaps in AI strategy.",
+      "category": "concept",
+      "related": ["9Q Framework", "CoIntelligence Index"]
+    },
+    {
+      "term": "Quadrant",
+      "definition": "One of nine positions on the 9Q grid (Q1-Q9), each representing a distinct strategic position with specific characteristics and requirements.",
+      "category": "concept",
+      "related": ["9Q Framework", "Q5 Sweet Spot"]
+    },
+    {
+      "term": "Q5 Sweet Spot",
+      "definition": "The Curator position (Augment × Adaptive) where most leading organizations currently cluster. Represents equilibrium between capability and trust.",
+      "category": "finding",
+      "related": ["9Q Framework", "Validation"]
+    },
+    {
+      "term": "Rhythm Signature",
+      "definition": "An organization's unique percentage distribution of work across Lines, Loops, and Vibes. Predicts where AI will create value.",
+      "category": "concept",
+      "related": ["LLV", "Lines", "Loops", "Vibes"]
+    },
+    {
+      "term": "The 4A Process",
+      "definition": "Four approaches to work transformation with AI: Abandon (stop doing), Assist (AI helps), Augment (AI collaborates), Adapt (AI acts).",
+      "category": "framework",
+      "related": ["Abandon Gate", "AAA Maturity Model"]
+    },
+    {
+      "term": "Trust Capital",
+      "definition": "The accumulated trust that enables higher levels of AI autonomy. Built through consistent performance, transparency, and maintained override capability.",
+      "category": "concept",
+      "related": ["Adapt", "Override", "Maturity Gate"]
+    },
+    {
+      "term": "Vibes",
+      "definition": "In the LLV framework, intuition-driven work involving pattern recognition, relationships, and creative leaps. Low automation potential - AI should inform, not replace.",
+      "category": "work-type",
+      "related": ["LLV", "Lines", "Loops", "Judgment"]
+    }
+  ]
+}
