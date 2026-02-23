@@ -6,51 +6,50 @@ Last Updated: 2026-02-22
 ## Phase 1: Scaffold — COMPLETE
 
 - [x] Initialize Next.js 15 + Nextra v4 + Pagefind
-- [x] App Router configuration (layout, catch-all, mdx-components)
-- [x] Content structure with _meta.ts files
+- [x] App Router configuration
+- [x] Content structure
 - [x] Homepage + framework overviews
 - [x] Reference section with licensing
-- [x] Build passing, Git initialized
-- [x] Deployed to Vercel (queued)
+- [x] Git + GitHub repo
+- [x] Vercel deployment (auth-protected, needs domain config)
 
-## Phase 2: Core Content — IN PROGRESS
+## Phase 2: Core Content — COMPLETE
 
 ### 2.1 9Q Framework — COMPLETE
-- [x] `content/frameworks/9q/the-grid.mdx`
-- [x] `content/frameworks/9q/quadrants.mdx`
-- [x] `content/frameworks/9q/portfolio-shape.mdx`
-- [x] `content/frameworks/9q/business-model-navigator.mdx`
-- [x] `content/frameworks/9q/co-intelligence-index.mdx`
-- [x] `content/frameworks/9q/validation.mdx`
+- [x] the-grid.mdx
+- [x] quadrants.mdx
+- [x] portfolio-shape.mdx
+- [x] business-model-navigator.mdx
+- [x] co-intelligence-index.mdx
+- [x] validation.mdx
 
 ### 2.2 AAA Framework — COMPLETE
-- [x] `content/frameworks/aaa/assist.mdx`
-- [x] `content/frameworks/aaa/augment.mdx`
-- [x] `content/frameworks/aaa/adapt.mdx`
-- [x] `content/frameworks/aaa/maturity-gates.mdx`
-- [x] `content/frameworks/aaa/capability-navigator.mdx`
+- [x] assist.mdx
+- [x] augment.mdx
+- [x] adapt.mdx
+- [x] maturity-gates.mdx
+- [x] capability-navigator.mdx
 
 ### 2.3 LLV Framework — COMPLETE
-- [x] `content/frameworks/llv/lines.mdx`
-- [x] `content/frameworks/llv/loops.mdx`
-- [x] `content/frameworks/llv/vibes.mdx`
-- [ ] `content/frameworks/llv/rhythm-signatures.mdx`
-- [ ] `content/frameworks/llv/case-studies.mdx`
+- [x] lines.mdx
+- [x] loops.mdx
+- [x] vibes.mdx
+- [x] rhythm-signatures.mdx
+- [x] case-studies.mdx
 
-### 2.4 4A Framework
-- [ ] `content/frameworks/4a/abandon-gate.mdx`
+### 2.4 4A Framework — COMPLETE
+- [x] abandon-gate.mdx
 
-### 2.5 Agent-Readable JSON
-- [ ] `public/api/frameworks.json`
-- [ ] `public/api/9q-grid.json`
-- [ ] `public/api/aaa-maturity.json`
-- [ ] `public/api/glossary.json`
+### 2.5 Agent-Readable JSON — COMPLETE
+- [x] /api/frameworks.json
+- [x] /api/9q-grid.json
+- [x] /api/aaa-maturity.json
+- [x] /api/glossary.json
 
-### 2.6 Priority Components
-- [ ] `components/QuadrantGrid.tsx`
-- [ ] `components/FrameworkCard.tsx`
-- [ ] `components/CaseStudyCard.tsx`
-- [ ] Register in `mdx-components.tsx`
+### 2.6 Priority Components — PENDING
+- [ ] QuadrantGrid.tsx
+- [ ] FrameworkCard.tsx
+- [ ] CaseStudyCard.tsx
 
 ## Phase 3: Expand (Low Priority)
 
@@ -89,23 +88,24 @@ Last Updated: 2026-02-22
 - [ ] Interactive QuadrantGrid
 - [ ] CoIntelligence Index calculator
 
-## Completed Commits
+## Commits
 
-1. `a884f67` — Phase 1 Scaffold (2026-02-22)
-2. `45221eb` — Phase 2 Framework Detail Pages (2026-02-22)
+1. `a884f67` — Phase 1 Scaffold
+2. `45221eb` — Phase 2 Framework Detail Pages (9Q, AAA, LLV core)
+3. `3046031` — Complete Phase 2 (LLV full, 4A, JSON API)
 
 ## Current Stats
 
-- **Pages**: 22
-- **Words indexed**: 1,282
-- **Build status**: Passing
-- **Deploy status**: Queued on Vercel
+- **Pages**: 25
+- **Words indexed**: 1,466
+- **JSON endpoints**: 4
+- **Build**: Passing
+- **GitHub**: https://github.com/suhitanantula/helixos
+- **Vercel**: Deployed (auth-protected)
 
----
+## Next Steps
 
-## Notes
-
-- Nextra v4 (App Router) — no theme.config
-- `_meta.ts` files (TypeScript)
-- Avoid `>` `<` in tables (use "Above", "Under")
-- ™ symbol on first reference per page
+1. **Configure Vercel domain** — Add helixos subdomain
+2. **Disable auth protection** — Make site public
+3. **Phase 2.6** — Build React components (QuadrantGrid, etc.)
+4. **Phase 3** — Expand content sections
