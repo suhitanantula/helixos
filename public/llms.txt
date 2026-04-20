@@ -1,0 +1,68 @@
+# HelixOS — LLM Agent Reference
+
+> The Co-Intelligent Organisation's framework library, published by The Helix Lab.
+
+## What This Site Is
+
+HelixOS is the canonical source of truth for The Helix Lab's intellectual property: four trademarked frameworks that share a unified logic (AAA core). It is designed for three audiences: human clients, readers, and AI agents.
+
+## Frameworks
+
+### 9Q™ — Strategic Positioning Grid
+A 3×3 grid mapping customer autonomy against execution autonomy. Answers: "Where should our AI portfolio be positioned?"
+- Path: `/frameworks/9q`
+- Key pages: The Grid, Quadrants, Portfolio Shape, Co-Intelligence Index, Validation, Business Model Navigator
+
+### AAA™ — Maturity Model
+Three-tier capability maturity: Assist → Augment → Adapt. Answers: "Are we ready? How do we progress?"
+- Path: `/frameworks/aaa`
+- Key pages: Assist, Augment, Adapt, Capability Navigator, Maturity Gates
+
+### LLV™ — Lines, Loops & Vibes
+Work categorisation: repeatable (Lines), learning cycles (Loops), intuition-driven (Vibes). Answers: "What's the rhythm of our organisation?"
+- Path: `/frameworks/llv`
+- Key pages: Lines, Loops, Vibes, Rhythm Signatures, Case Studies
+
+### 4A™ — Work Transformation Process
+Abandon → Assist → Augment → Adapt. Starts with elimination before transformation. Answers: "How does work change with AI?"
+- Path: `/frameworks/4a`
+- Key pages: Abandon Gate
+
+## Unified Logic
+
+All four frameworks share the AAA core. Connections:
+- AAA is the vertical axis of 9Q (internal capability determines viable external positions)
+- LLV work type determines appropriate 4A approach
+- 4A options expand as AAA tier increases
+
+## Machine-Readable API
+
+JSON endpoints for programmatic access:
+- `/api/frameworks.json` — all frameworks with relationships
+- `/api/9q-grid.json` — 9Q grid structure
+- `/api/aaa-maturity.json` — AAA maturity levels
+- `/api/glossary.json` — terminology definitions
+
+## Site Structure
+
+```
+content/
+  frameworks/    → 9q/, aaa/, llv/, 4a/
+  reference/     → licensing
+public/api/      → JSON endpoints
+AGENTS.md        → agent operations guide
+```
+
+## Conventions
+
+- All content is MDX with frontmatter
+- Framework pages follow: index → concepts → diagnostics → case-studies
+- `_meta.ts` files define navigation structure
+- Trademarked terms: 9Q™, AAA™, LLV™, 4A™
+
+## Organisation
+
+The Helix Lab — AI strategy consultancy founded by Suhit Anantula (Adelaide, Australia).
+Site: https://thehelixlab.co
+Newsletter: https://thehelixloop.com
+Author: https://suhitanantula.com
