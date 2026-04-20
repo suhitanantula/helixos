@@ -1,18 +1,20 @@
-import { useMDXComponents as getDocsMDXComponents } from 'nextra-theme-docs'
+import type { MDXComponents } from 'mdx/types'
 import { QuadrantGrid } from './components/QuadrantGrid'
 import { FrameworkCard } from './components/FrameworkCard'
 import { CaseStudyCard } from './components/CaseStudyCard'
 import { MaturityTier } from './components/MaturityTier'
 
-const docsComponents = getDocsMDXComponents()
+function HelixMDXWrapper({ children }: { children: React.ReactNode }) {
+  return <article className="helix-article">{children}</article>
+}
 
-export function useMDXComponents(components?: Record<string, React.ComponentType>) {
+export function useMDXComponents(components?: MDXComponents): MDXComponents {
   return {
-    ...docsComponents,
+    wrapper: HelixMDXWrapper,
     QuadrantGrid,
     FrameworkCard,
     CaseStudyCard,
     MaturityTier,
-    ...components
+    ...components,
   }
 }

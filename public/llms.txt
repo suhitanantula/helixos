@@ -1,17 +1,22 @@
-# HelixOS — LLM Agent Reference
+# Helix OS — LLM Agent Reference
 
-> The Co-Intelligent Organisation's framework library, published by The Helix Lab.
+> The intellectual operating system of The Helix Lab, published by Suhit Anantula.
+> Designed for three audiences: human clients, AI models, and AI agents.
 
 ## What This Site Is
 
-HelixOS is the canonical source of truth for The Helix Lab's intellectual property: four trademarked frameworks that share a unified logic (AAA core). It is designed for three audiences: human clients, readers, and AI agents.
+Helix OS (os.suhitanantula.com) is the canonical source for The Helix Lab's intellectual property:
+four trademarked frameworks, three books, and diagnostic tools — all sharing a unified logic (AAA core).
+
+---
 
 ## Frameworks
 
 ### 9Q™ — Strategic Positioning Grid
 A 3×3 grid mapping customer autonomy against execution autonomy. Answers: "Where should our AI portfolio be positioned?"
 - Path: `/frameworks/9q`
-- Key pages: The Grid, Quadrants, Portfolio Shape, Co-Intelligence Index, Validation, Business Model Navigator
+- Key pages: The Grid, Quadrants, Portfolio Shape, Co-Intelligence Index, Validation
+- Related: AAA (vertical axis IS the AAA progression)
 
 ### AAA™ — Maturity Model
 Three-tier capability maturity: Assist → Augment → Adapt. Answers: "Are we ready? How do we progress?"
@@ -23,46 +28,95 @@ Work categorisation: repeatable (Lines), learning cycles (Loops), intuition-driv
 - Path: `/frameworks/llv`
 - Key pages: Lines, Loops, Vibes, Rhythm Signatures, Case Studies
 
+### Helix Engine v6™
+Cognitive methodology for structuring strategic analysis using three AI agents (SENSING, ARCHITECT, EVOLVE) grounded in cognitive neuroscience. Not software — a protocol.
+- Path: `/frameworks/helix-engine`
+- Key concepts: Triadic architecture, 8-dimension challenge fingerprinting, human pause points, glass-box transparency
+
 ### 4A™ — Work Transformation Process
-Abandon → Assist → Augment → Adapt. Starts with elimination before transformation. Answers: "How does work change with AI?"
+Abandon → Assist → Augment → Adapt. Starts with elimination before transformation.
 - Path: `/frameworks/4a`
-- Key pages: Abandon Gate
+
+---
+
+## Books
+
+### The Helix Moment (Book 1)
+Strategic rhythm, LLV framework, and the philosophy of co-intelligence. Published October 2025.
+- Author: Suhit Anantula
+- External site: https://thehelixmoment.com
+- Book page: https://suhitanantula.com/books/helix-moment
+- AI companion: https://os.suhitanantula.com/companion/helix-moment (coming Phase 3)
+- Knowledge kernel: `/knowledge/helix-moment.md` (coming Phase 3)
+
+### The Policy Playbook (Book 2)
+AI policy design and implementation for government and enterprise.
+- Author: Suhit Anantula
+- External site: https://thepolicyplaybook.org
+- Book page: https://suhitanantula.com/books/policy-playbook
+- AI companion: https://os.suhitanantula.com/companion/policy-playbook (coming Phase 3)
+- Knowledge kernel: `/knowledge/policy-playbook.md` (coming Phase 3)
+
+### The Co-Intelligent Organisation (Book 3)
+How organisations restructure for AI-native operations.
+- Author: Suhit Anantula
+- Book page: https://suhitanantula.com/books/co-intelligent-org
+- AI companion: https://os.suhitanantula.com/companion/co-intelligent-org (coming Phase 3)
+- Knowledge kernel: `/knowledge/co-intelligent-org.md` (coming Phase 3)
+
+---
 
 ## Unified Logic
 
-All four frameworks share the AAA core. Connections:
-- AAA is the vertical axis of 9Q (internal capability determines viable external positions)
-- LLV work type determines appropriate 4A approach
-- 4A options expand as AAA tier increases
+All frameworks share a common foundation:
+- **AAA** is the core progression: Assist → Augment → Adapt
+- **9Q** applies AAA externally: customer autonomy (rows) × execution autonomy (columns)
+- **LLV** determines the right rhythm for each AAA tier
+- **Helix Engine v6** orchestrates the other frameworks in a live session
+- **4A** provides the operational path through AAA tiers
+
+You cannot reach Q7–Q9 (high customer autonomy) without Adapt-level internal capability.
+This constraint is the most common cause of AI initiative failure.
+
+---
 
 ## Machine-Readable API
 
 JSON endpoints for programmatic access:
-- `/api/frameworks.json` — all frameworks with relationships
+- `/api/frameworks.json` — all frameworks with relationships and metadata
+- `/api/books.json` — book registry with chapter metadata
 - `/api/9q-grid.json` — 9Q grid structure
 - `/api/aaa-maturity.json` — AAA maturity levels
-- `/api/glossary.json` — terminology definitions
+
+## Agent Tools (MCP — coming Phase 4)
+
+Helix OS will expose an MCP server:
+- `get_framework(name)` — returns full framework content
+- `list_frameworks()` — returns the IP registry
+- `run_9q_diagnostic(answers)` — scores and positions on the 9Q grid
+- `search_knowledge(query, book?)` — searches knowledge kernels
+
+OpenAPI spec: `/api/openapi.json` (coming Phase 4)
+
+---
 
 ## Site Structure
 
 ```
 content/
-  frameworks/    → 9q/, aaa/, llv/, 4a/
+  frameworks/    → 9q/, aaa/, llv/, llv/, 4a/, helix-engine/
   reference/     → licensing
-public/api/      → JSON endpoints
-AGENTS.md        → agent operations guide
+public/
+  api/           → JSON endpoints
+  llms.txt       → this file
+  knowledge/     → per-book kernels (coming Phase 3)
 ```
 
-## Conventions
+## About
 
-- All content is MDX with frontmatter
-- Framework pages follow: index → concepts → diagnostics → case-studies
-- `_meta.ts` files define navigation structure
-- Trademarked terms: 9Q™, AAA™, LLV™, 4A™
+**Author:** Suhit Anantula — AI strategy consultant, Adelaide, Australia
+**Site:** https://suhitanantula.com
+**Helix OS:** https://os.suhitanantula.com
+**Newsletter:** https://thehelixloop.com
 
-## Organisation
-
-The Helix Lab — AI strategy consultancy founded by Suhit Anantula (Adelaide, Australia).
-Site: https://thehelixlab.co
-Newsletter: https://thehelixloop.com
-Author: https://suhitanantula.com
+*Frameworks are proprietary IP of The Helix Lab. See licensing at `/reference/licensing`.*

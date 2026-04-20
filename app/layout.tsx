@@ -1,63 +1,34 @@
-import { Footer, Layout, Navbar } from 'nextra-theme-docs'
-import { Head, Search } from 'nextra/components'
-import { getPageMap } from 'nextra/page-map'
-import 'nextra-theme-docs/style.css'
+import type { Metadata } from 'next'
+import './globals.css'
+import { HelixSidebar } from '../components/HelixSidebar'
+import { HelixHeader } from '../components/HelixHeader'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
-    default: 'HelixOS — The Helix Lab',
-    template: '%s | HelixOS'
+    default: 'Helix OS — Operating Infrastructure',
+    template: '%s | Helix OS',
   },
-  description: 'The canonical source of truth for The Helix Lab frameworks, methodologies, and diagnostic tools.',
+  description:
+    'The operating infrastructure behind co-intelligent strategy. Frameworks, diagnostics, and AI tools for organisations navigating AI transformation.',
   openGraph: {
-    siteName: 'HelixOS',
-    type: 'website'
-  }
+    siteName: 'Helix OS',
+    type: 'website',
+  },
 }
 
-const navbar = (
-  <Navbar
-    logo={<b>HelixOS</b>}
-    projectLink="https://thehelixlab.co"
-  />
-)
-
-const footer = (
-  <Footer className="flex-col items-center md:items-start">
-    © {new Date().getFullYear()} The Helix Lab. All rights reserved.
-  </Footer>
-)
-
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      dir="ltr"
-      suppressHydrationWarning
-    >
-      <Head
-        backgroundColor={{
-          dark: 'rgb(10, 38, 71)',
-          light: 'rgb(248, 255, 254)'
-        }}
-        color={{
-          hue: { dark: 174, light: 174 },
-          saturation: { dark: 55, light: 55 }
-        }}
-      />
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <Layout
-          navbar={navbar}
-          pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/thehelixlab/helixos/tree/main/content"
-          editLink="Edit this page"
-          sidebar={{ defaultMenuCollapseLevel: 1 }}
-          footer={footer}
-          search={<Search placeholder="Search HelixOS..." />}
-          toc={{ title: 'On This Page' }}
-        >
-          {children}
-        </Layout>
+        <div className="helix-root">
+          <HelixSidebar />
+          <div className="helix-content-area">
+            <HelixHeader />
+            <main className="helix-main">
+              {children}
+            </main>
+          </div>
+        </div>
       </body>
     </html>
   )

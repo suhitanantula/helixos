@@ -36,3 +36,5 @@ next-env.d.ts
 # pagefind
 _pagefind/
 public/_pagefind/
+mcp/node_modules/
+mcp/dist/

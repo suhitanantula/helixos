@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-04-20",
+  "books": [
+    {
+      "id": "helix-moment",
+      "title": "The Helix Moment",
+      "subtitle": "Strategy in Motion",
+      "author": "Suhit Anantula",
+      "published": "2025-10",
+      "status": "published",
+      "description": "The foundational book introducing the LLV framework, strategic rhythm, and the philosophy of co-intelligence.",
+      "externalSite": "https://thehelixmoment.com",
+      "bookPage": "https://suhitanantula.com/books/helix-moment",
+      "aiCompanion": "https://os.suhitanantula.com/companion/helix-moment",
+      "knowledgeKernel": "/knowledge/helix-moment.md",
+      "frameworks": ["llv", "helix-engine"],
+      "chapterCount": 33,
+      "tags": ["strategy", "llv", "co-intelligence", "rhythm"]
+    },
+    {
+      "id": "policy-playbook",
+      "title": "The Policy Playbook",
+      "subtitle": "AI Policy Design for Government and Enterprise",
+      "author": "Suhit Anantula",
+      "published": "2025",
+      "status": "published",
+      "description": "A practical guide to designing and implementing AI policy — from first principles to deployment.",
+      "externalSite": "https://thepolicyplaybook.org",
+      "bookPage": "https://suhitanantula.com/books/policy-playbook",
+      "aiCompanion": "https://os.suhitanantula.com/companion/policy-playbook",
+      "knowledgeKernel": "/knowledge/policy-playbook.md",
+      "frameworks": ["aaa", "9q"],
+      "chapterCount": 17,
+      "tags": ["policy", "government", "enterprise", "AI-governance"]
+    },
+    {
+      "id": "co-intelligent-org",
+      "title": "The Co-Intelligent Organisation",
+      "subtitle": "Restructuring for AI-Native Operations",
+      "author": "Suhit Anantula",
+      "published": "2026",
+      "status": "in-progress",
+      "description": "How organisations restructure their people, processes, and technology for the AI-native era.",
+      "bookPage": "https://suhitanantula.com/books/co-intelligent-org",
+      "aiCompanion": "https://os.suhitanantula.com/companion/co-intelligent-org",
+      "knowledgeKernel": "/knowledge/co-intelligent-org.md",
+      "frameworks": ["9q", "aaa", "llv", "4a"],
+      "chapterCount": 14,
+      "tags": ["organisation", "transformation", "ai-native", "operating-model"]
+    }
+  ]
+}
