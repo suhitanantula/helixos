@@ -46,6 +46,14 @@ const NAV = [
     ],
   },
   {
+    module: 'BOOKS',
+    items: [
+      { label: 'All Books', href: '/books' },
+      { label: 'The Helix Moment', href: '/books/helix-moment' },
+      { label: 'The Policy Playbook', href: '/books/policy-playbook' },
+    ],
+  },
+  {
     module: 'DIAGNOSTICS',
     items: [
       { label: '9Q Diagnostic', href: '/diagnostic', soon: true },
